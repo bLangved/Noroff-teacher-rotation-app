@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Oliver Dipple",
+    "avatar": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=oliver.dipple@noroff.no",
+    "weekday": [1]
+  },
+  {
+    "id": 2,
+    "name": "Nelly Moseki",
+    "avatar": "https://images.hindustantimes.com/img/2022/08/07/1600x900/cat_1659882617172_1659882628989_1659882628989.jpg",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=nelly.moseki@noroff.no",
+    "weekday": [1]
+  },
+  {
+    "id": 3,
+    "name": "Abiodun Abudu",
+    "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/98880a65948559.5b05916bdc9e3.jpg",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=abiodun.abudu@noroff.no",
+    "weekday": [2]
+  },
+  {
+    "id": 4,
+    "name": "Talitha Kruger",
+    "avatar": "https://hips.hearstapps.com/hmg-prod/images/cat-puns-64ef515f6036a.jpg?crop=1xw:0.8423586572438162xh;center,top",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=talitha.kruger@noroff.no",
+    "weekday": [2]
+  },
+  {
+    "id": 5,
+    "name": "Martin Krüger",
+    "avatar": "https://hips.hearstapps.com/hmg-prod/images/neva-masquerade-royalty-free-image-1674509896.jpg?crop=0.8109xw:1xh;center,top&resize=1200:*",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=martin.krueger@noroff.no",
+    "weekday": [3]
+  },
+  {
+    "id": 6,
+    "name": "Marvin Poole",
+    "avatar": "https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg?w=600",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=marvin.poole@noroff.no",
+    "weekday": [4]
+  },
+  {
+    "id": 7,
+    "name": "Bonita Marlene Diener",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT29HCMliM4Y7bUIX0gtrKlXrSm3Yv_ac_epoF9iKAZKQ&s",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=bonita.diener@noroff.no",
+    "weekday": [5]
+  },
+  {
+    "id": 8,
+    "name": "Connor obrien",
+    "avatar": "https://storage.googleapis.com/pod_public/1300/151089.jpg",
+    "contact": "https://teams.microsoft.com/l/chat/0/0?users=connor.obrien@noroff.no",
+    "weekday": [6]
+  }
+]

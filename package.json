@@ -1,0 +1,36 @@
+{
+  "name": "tutor-webapp",
+  "version": "0.0.1",
+  "description": "A webapp for checking available Noroff tutors",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "run",
+    "format": "prettier --write \"src/**/*.{js,css}\"",
+    "watch:scss": "sass --watch src/scss:src/css",
+    "dev": "concurrently \"vite --host\" \"npm run watch:scss\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bLangved/tutor-webapp.git"
+  },
+  "keywords": [
+    "webapp",
+    "noroff",
+    "students"
+  ],
+  "author": "Bjørnar Heian Langved",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bLangved/tutor-webapp/issues"
+  },
+  "homepage": "https://github.com/bLangved/tutor-webapp#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
+    "vite": "^5.0.8"
+  }
+}
