@@ -1,6 +1,6 @@
 {
   "name": "tutor-webapp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A webapp for checking available Noroff tutors",
   "main": "index.js",
   "type": "module",
