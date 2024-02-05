@@ -1,6 +1,6 @@
 {
   "name": "Noroff teacher rotation app",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A webapp for checking Noroff teacher rotation for support",
   "main": "index.js",
   "type": "module",
