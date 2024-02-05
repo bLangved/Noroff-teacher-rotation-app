@@ -1,0 +1,57 @@
+html {
+  color-scheme: dark light;
+}
+
+:root {
+  --noroff-primary-red: #ff2f02;
+  --noroff-secondary-red: #b21f01;
+  --border-green: rgb(39, 185, 39);
+  --border-red: rgb(230, 0, 0);
+  --card-white: rgb(250, 250, 250);
+  --card-black: rgb(20, 20, 20);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(10, 10, 10);
+  --color-primary: rgb(5, 5, 5);
+  --color-reverse: rgb(250, 250, 250);
+  --tooltip: rgb(255, 255, 255);
+  --card-box-shadow: 0 2px 12px rgb(40, 40, 40, 0.75);
+  --background-gradient: linear-gradient(
+    45deg,
+    hsl(11deg 100% 50%) -1%,
+    hsl(12deg 100% 58%) 0%,
+    hsl(13deg 100% 63%) 4%,
+    hsl(14deg 100% 68%) 11%,
+    hsl(15deg 100% 73%) 20%,
+    hsl(16deg 100% 78%) 31%,
+    hsl(17deg 100% 84%) 44%,
+    hsl(17deg 100% 89%) 60%,
+    hsl(18deg 100% 94%) 78%,
+    hsl(0deg 0% 100%) 100%
+  );
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --card-white: rgb(245, 245, 245);
+    --card-black: rgb(30, 30, 30);
+    --color-primary: rgb(250, 250, 250);
+    --color-reverse: rgb(10, 10, 10);
+    --background-primary: rgb(15, 15, 15);
+    --card-box-shadow: 0px 2px 12px rgb(70, 70, 70, 0.75);
+    --background-gradient: linear-gradient(
+      45deg,
+      hsl(11deg 100% 50%) -1%,
+      hsl(6deg 85% 48%) 0%,
+      hsl(2deg 77% 44%) 4%,
+      hsl(360deg 72% 39%) 11%,
+      hsl(358deg 69% 33%) 20%,
+      hsl(358deg 66% 27%) 31%,
+      hsl(357deg 60% 21%) 44%,
+      hsl(358deg 53% 15%) 60%,
+      hsl(3deg 48% 9%) 78%,
+      hsl(0deg 100% 0%) 100%
+    );
+  }
+}
+
+/*# sourceMappingURL=color-scheme.css.map */

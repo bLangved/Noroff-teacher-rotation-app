@@ -1,13 +1,7 @@
+@import "./color-scheme.scss";
+
 * {
   box-sizing: border-box;
-}
-
-img,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 :root {
@@ -18,12 +12,17 @@ video {
   --fs-700: 1.75rem;
   --fs-800: 2rem;
   --fs-900: 2.5rem;
-  --noroff-primary-red: #ff2f01;
-  --noroff-secondary-red: #b21f01;
-  --color-primary-white: rgb(255, 255, 255);
-  --color-secondary-white: rgb(245, 245, 245);
-  --color-primary-black: rgb(30, 30, 30);
-  --color-secondary-black: rgb(0, 0, 0);
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -47,8 +46,24 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  background-color: var(--noroff-secondary-red);
-  color: var(--color-primary-white);
+  background-image: var(--background-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color-primary);
+}
+
+header {
+  background-color: var(--noroff-primary-red);
+  height: 4em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .logoContainer {
+    margin-left: 1.5em;
+    img {
+      object-fit: contain;
+    }
+  }
 }
 
 main {
@@ -56,6 +71,7 @@ main {
   max-width: 60em;
   padding: 1em;
 }
+
 .hero-section {
   margin-bottom: 3em;
   text-align: center;
@@ -84,8 +100,6 @@ main {
 
     a {
       flex: 1;
-      text-decoration: none;
-
       .card {
         cursor: pointer;
         position: relative;
@@ -101,14 +115,15 @@ main {
         height: 8.5em;
         padding: 1em 0.25em;
         transition: transform 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--card-box-shadow);
 
         img {
-          width: 3em;
-          height: 3em;
+          object-fit: cover;
+          width: 3.5em;
+          height: 3.5em;
           border-radius: 50%;
-          margin-bottom: 1.5em;
-          box-shadow: 2px 2px 3px rgb(160, 160, 160);
+          margin-bottom: 1em;
+          box-shadow: 0px 0px 8px rgb(100, 100, 100);
         }
 
         span {
@@ -121,18 +136,19 @@ main {
       }
       .tooltip {
         position: absolute;
-        width: 10em;
-        background-color: var(--color-primary-white);
-        color: var(--color-primary-black);
+        display: grid;
+        place-items: center;
         text-align: center;
+        width: 8em;
+        height: 6em;
         border-radius: 0.5em;
         padding: 1em;
         z-index: 1;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -3.25em;
+        bottom: 110%;
         opacity: 0;
         visibility: hidden;
+        color: var(--color-black);
+        background-color: var(--tooltip);
       }
 
       .card:hover .tooltip {
@@ -148,9 +164,9 @@ main {
     a {
       .card {
         max-width: 30em;
-        background-color: var(--color-primary-white);
-        color: var(--color-primary-black);
-        border: 2px solid green;
+        background-color: var(--card-white);
+        color: var(--color-black);
+        border: 3px solid var(--border-green);
       }
     }
   }
@@ -158,9 +174,9 @@ main {
   .cards-inactive {
     a {
       .card {
-        background-color: var(--color-primary-black);
-        color: var(--color-primary-white);
-        border: 2px solid red;
+        background-color: var(--card-black);
+        color: var(--color-white);
+        border: 3px solid var(--border-red);
       }
     }
   }
@@ -171,11 +187,11 @@ footer {
   place-items: center;
   margin-top: auto;
   height: 4em;
-  background-color: var(--color-secondary-black);
+  background-color: var(--noroff-primary-red);
 
   * {
     font-size: var(--fs-500);
-    color: var(--color-secondary-white);
+    color: var(--color-white);
     text-decoration: none;
   }
 }

@@ -38,30 +38,32 @@ class TutorManager {
 
       const card = document.createElement("div");
       card.id = `tutorId${tutor.id}`;
+
+      const tooltip = document.createElement("span");
+      tooltip.className = "tooltip";
+      const firstName = tutor.name.split(" ")[0];
+      const availableDays = tutor.weekday
+        .map(
+          (day) =>
+            [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ][day]
+        )
+        .join(", ");
       if (container.className === "cards-active") {
         card.className = "card active";
+        tooltip.innerText = `${firstName} can help you today!`;
       } else {
         card.className = "card";
-        const tooltip = document.createElement("span");
-        tooltip.className = "tooltip";
-        const firstName = tutor.name.split(" ")[0];
-        const availableDays = tutor.weekday
-          .map(
-            (day) =>
-              [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ][day]
-          )
-          .join(", ");
         tooltip.innerText = `${firstName} is available on ${availableDays}`;
-        card.append(tooltip);
       }
+      card.append(tooltip);
 
       const img = document.createElement("img");
       img.setAttribute("src", tutor.avatar);
