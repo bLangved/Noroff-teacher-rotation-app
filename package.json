@@ -1,7 +1,7 @@
 {
-  "name": "tutor-webapp",
+  "name": "Noroff teacher rotation app",
   "version": "0.0.3",
-  "description": "A webapp for checking available Noroff tutors",
+  "description": "A webapp for checking Noroff teacher rotation for support",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/bLangved/tutor-webapp.git"
+    "url": "git+ssh://git@github.com/bLangved//Noroff-teacher-rotation-app.git"
   },
   "keywords": [
     "webapp",
@@ -24,9 +24,9 @@
   "author": "Bjørnar Heian Langved",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/bLangved/tutor-webapp/issues"
+    "url": "https://github.com/bLangved//Noroff-teacher-rotation-app/issues"
   },
-  "homepage": "https://github.com/bLangved/tutor-webapp#readme",
+  "homepage": "https://github.com/bLangved/Noroff-teacher-rotation-app",
   "devDependencies": {
     "concurrently": "^8.2.2",
     "prettier": "^3.2.4",
