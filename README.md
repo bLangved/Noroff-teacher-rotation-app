@@ -1,7 +1,7 @@
 # Noroff teacher rotation app
 
 A frontend web application for checking which online teacher(s) is available for support on specific days <br>
-**Deployed site:**
+**Deployed site:** https://duty.noroff.dev/
 
 ## Status badges
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4a2fcdcb-df24-46fc-aef7-007d60ff216a/deploy-status)](https://app.netlify.com/sites/chic-khapse-a6d951/deploys)
