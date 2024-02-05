@@ -1,13 +1,13 @@
-import { fetchTutors } from "./fetchTutor.js";
+import tutorData from "../data/tutors.json";
 
 class TutorManager {
   constructor() {
     this.tutors = [];
+    this.loadData();
   }
 
-  async loadData() {
+  loadData() {
     try {
-      const tutorData = await fetchTutors();
       this.tutors = tutorData;
       this.renderActiveTutors();
       this.renderInactiveTutors();
@@ -42,6 +42,25 @@ class TutorManager {
         card.className = "card active";
       } else {
         card.className = "card";
+        const tooltip = document.createElement("span");
+        tooltip.className = "tooltip";
+        const firstName = tutor.name.split(" ")[0];
+        const availableDays = tutor.weekday
+          .map(
+            (day) =>
+              [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ][day]
+          )
+          .join(", ");
+        tooltip.innerText = `${firstName} is available on ${availableDays}`;
+        card.append(tooltip);
       }
 
       const img = document.createElement("img");
@@ -68,7 +87,7 @@ class TutorManager {
     this.renderTutors(container, inactiveTutors);
   }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
-  const tutorManager = new TutorManager();
-  tutorManager.loadData();
+  new TutorManager();
 });
